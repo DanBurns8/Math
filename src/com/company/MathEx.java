@@ -4,6 +4,7 @@ public class MathEx {
     public static void main(String[] args) {
         System.out.println(swap(453));
         timeleft(3,34, 8, 56);
+        dayOfWeek(6, 22);
     }
     public static int swap(int x) {
         int ones = x%10;
@@ -20,5 +21,9 @@ public class MathEx {
         int totalMintime = (differenceTime % 60);
         System.out.println(totalHourtime + " hours " + totalMintime + " minutes");
     }
-//public static void dayOfWeek()
+    public static void dayOfWeek (int dayOf1stWeek, int date) {
+    int dayOftheWeek = ((date -1  + dayOf1stWeek) % 7);
+        System.out.println("The day of the week for January " + date + " is " + dayOftheWeek);
+    }
+
 }
