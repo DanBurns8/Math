@@ -22,7 +22,7 @@ public class MathEx {
         System.out.println(totalHourtime + " hours " + totalMintime + " minutes");
     }
     public static void dayOfWeek (int dayOf1stWeek, int date) {
-    int dayOftheWeek = ((date -1  + dayOf1stWeek) % 7);
+    int dayOftheWeek = ((date + dayOf1stWeek -1) % 7);
         System.out.println("The day of the week for January " + date + " is " + dayOftheWeek);
     }
 
